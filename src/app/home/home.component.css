@@ -24,7 +24,11 @@
   text-align: center;
 
 }
-
+.banner img
+{
+  height: 100px;
+  width:100%;
+}
 .form-title{
   padding: 0px 0px 15px 0px;
 }
