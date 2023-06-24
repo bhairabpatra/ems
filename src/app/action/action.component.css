@@ -1,0 +1,33 @@
+.createemp-heading
+{
+  background-color: rgb(56, 56, 155) ;
+  color: white;
+
+}
+.bread-cumb p{
+  font: 15px;
+}
+.table {
+  background-color: rgb(237, 238, 240);
+  border-radius: 5px;
+  max-width: 1080px;
+  margin: 0px auto;
+  margin: 20PX;
+
+}
+.btn {
+  color: white;
+}
+.data{
+  padding: 10px;
+  background-color:rgb(174, 211, 242);
+}
+
+.btn-style{
+  border-radius: 0px;
+  width: 100px;
+}
+
+.error{
+  max-width: 50px;
+}

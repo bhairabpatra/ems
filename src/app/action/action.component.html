@@ -1,0 +1,42 @@
+<section class=" wrapper">
+  <div class="createemp-heading">
+    <div class="container bread-cumb">
+      <p>Home/ All Employee </p>
+    </div>
+  </div>
+  <div class="container data table-responsive">
+    <table class="table table-striped" *ngIf="allemplIst.length; else templateName">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">Email Id</th>
+          <th scope="col">Edit action</th>
+          <th scope="col">Delete action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let emp of allemplIst">
+
+          <th scope="row">
+
+
+  {{ emp.id }}
+
+            </th>
+          <td>{{ emp.fnam }}</td>
+          <td>{{ emp.lname }}</td>
+          <td>{{ emp.emailId }}</td>
+          <td>
+  <a [routerLink]="['action/editprofile', emp.id]"><button class="btn btn-style bg-primary">Edit</button></a></td>
+
+          <td><button btn class="btn btn-style bg-danger">Delet</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #templateName>
+      <h5 class="">Employee list is empty</h5>
+  </ng-template>
+  </div>
+</section>

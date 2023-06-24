@@ -1,0 +1,20 @@
+.createemp-heading
+{
+  background-color: rgb(56, 56, 155) ;
+  color: white;
+
+}
+.cemp-id-login{
+  background-color: rgb(242, 242, 243);
+  border-radius: 15px;
+  padding: 35px;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-top: 80PX;
+}
+.btn{
+  text-align: center;
+}
+.bread-cumb p{
+  font: 15px;
+}
