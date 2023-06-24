@@ -24,9 +24,15 @@
   text-align: center;
 
 }
-
 .banner img
 {
   height: 100px;
   width:100%;
+}
+.form-title{
+  padding: 0px 0px 15px 0px;
+}
+.form-title h3{
+  color: rgb(0, 0, 0);
+  font-size: 25px;
 }
