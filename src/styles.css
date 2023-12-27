@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  padding: 0px;
+  margin: 0px;
+  font-family:'Franklin Gothic regular', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn{
+  border-radius: 0px !important;
+}
+.form-control{
+  border-radius: 0px !important;
+  height: 40px;
+}
+.error-message{
+  color: red;
+  font-size: 15px;
+  font-style: italic;
+}

@@ -1,0 +1,35 @@
+
+<div class="container">
+    <div class="form-login">
+      <div class="foem-heading">
+          <h1>Login form</h1>
+      </div>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="mb-2">User name</label>
+          <input type="text"  class="form-control" autocomplete="off" formControlName="username"  placeholder="Enter user name" id="username" required />
+          <div *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched">
+            <span class="error-message">Username is required</span>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="mb-2">Password</label>
+          <input type="password" class="form-control" autocomplete="off" placeholder="Enter password" formControlName="password" id="password" />
+          <div *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+            <span class="error-message">Password is required</span>
+          </div>
+          <div *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.touched">
+            <span class="error-message">Password must be at least 6 characters long</span>
+          </div>
+        </div>
+        <div class="mb-4">
+          <a routerLink="/signup">Go to Signup</a>
+        </div>
+
+
+        <button type="submit"  class="btn btn-primary w-100" [disabled]="loginForm.invalid">Let's Login</button>
+      </form>
+    </div>
+</div>
+

@@ -1,0 +1,42 @@
+
+<div class="container">
+  <div class="form-login">
+    <div class="foem-heading">
+        <h1>Registration form</h1>
+    </div>
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+
+      <div class="mb-3">
+        <label for="text" class="mb-2">User Name</label>
+        <input type="text"  class="form-control" autocomplete="off" formControlName="username"  placeholder="Enter User Name" id="username" required />
+        <div *ngIf="registrationForm.get('username')?.hasError('required') && registrationForm.get('username')?.touched">
+          <span class="error-message">Username is required</span>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="mb-2">Email</label>
+        <input type="email"  class="form-control" autocomplete="off" formControlName="email"  placeholder="Enter email" id="email" required />
+        <div *ngIf="registrationForm.get('email')?.hasError('required') && registrationForm.get('email')?.touched">
+          <span class="error-message">Email is required</span>
+        </div>
+        <div *ngIf="registrationForm.get('email')?.hasError('email') && registrationForm.get('email')?.touched">
+          <span class="error-message">Invalid email format</span>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label for="password" class="mb-2">Password</label>
+        <input type="password" class="form-control" autocomplete="off" placeholder="Enter password" formControlName="password" id="password" />
+        <div *ngIf="registrationForm.get('password')?.hasError('required') && registrationForm.get('password')?.touched">
+          <span class="error-message">Password is required</span>
+        </div>
+        <div *ngIf="registrationForm.get('password')?.hasError('minlength') && registrationForm.get('password')?.touched">
+          <span class="error-message">Password must be at least 6 characters long</span>
+        </div>
+      </div>
+      <button type="submit"  class="btn btn-primary w-100" [disabled]="registrationForm.invalid">Let's Register</button>
+    </form>
+  </div>
+</div>
+

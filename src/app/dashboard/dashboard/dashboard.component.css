@@ -1,0 +1,54 @@
+ul#menu {
+
+  width: 100%;
+}
+li {
+color: #FFF;
+  width: 100%;
+  border-bottom: 1px solid #c8c8c8;
+}
+.left-menu{
+  color: #000000;
+  font-size: 17px;
+
+  display: block;
+}
+.home-heading
+{
+
+  background-color: rgb(56, 56, 155) ;
+  color: white;
+
+  text-align: center;
+}
+.home-heading h4{
+  font-size: 20px;
+
+}
+.home-login{
+
+  background-color: rgb(242, 242, 243);
+  border-radius: 15px;
+  padding: 35px;
+  max-width: 500px;
+  margin: 0px auto;
+  margin-top: 80PX;
+
+}
+.btn{
+  text-align: center;
+
+}
+.banner img
+{
+  height: 100px;
+  width:100%;
+}
+.form-title{
+  padding: 0px 0px 15px 0px;
+}
+.form-title h3{
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+}
+

@@ -9,9 +9,15 @@ import { EditprofileComponent } from './editprofile/editprofile.component';
 import { CreateempComponent } from './createemp/createemp.component';
 import { ActionComponent } from './action/action.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { RouterModule, Routes } from '@angular/router';
-import { EmployeelistService } from './employeelist.service';
 
+import { EmployeelistService } from './employeelist.service';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { UsersComponent } from './components/users/users.component';
+import { UserdetailsComponent } from './components/userdetails/userdetails.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +27,19 @@ import { EmployeelistService } from './employeelist.service';
     EditprofileComponent,
     CreateempComponent,
     ActionComponent,
-    NavigationComponent
+    NavigationComponent,
+    LoginComponent,
+    SignupComponent,
+    DashboardComponent,
+    UsersComponent,
+    UserdetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
+
   ],
   providers: [EmployeelistService],
   bootstrap: [AppComponent]

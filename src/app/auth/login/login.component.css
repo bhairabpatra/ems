@@ -1,0 +1,15 @@
+.form-login {
+  max-width: 500px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  padding: 35px;
+  margin-top: 50px;
+}
+
+.foem-heading {
+  padding: 0px 0px 10px 0px;
+}
+
+.foem-heading h1 {
+  font-size: 25px;
+}
